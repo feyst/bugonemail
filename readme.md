@@ -8,21 +8,17 @@ Begin by installing this package through Composer.
 Edit your project's `composer.json` file to require `dinesh/bugonemail`.
 
     "require": {
-		"laravel/framework": "5.*",
-		"dinesh/bugonemail": "V2.1"
+		"laravel/framework": "5.5",
+		"dinesh/bugonemail": "V2.2"
 	}
 
 Next, update Composer from the Terminal:
 
     composer update
 
-Once this operation completes, the next step is to add the service provider. Open `app/config/app.php`, and add a new item to the providers array.
-
-    Dinesh\Bugonemail\BugonemailServiceProvider::class
-
 Next, you need to publish it's config file(s).
 
-    php artisan vendor:publish dinesh/bugonemail 
+    php artisan vendor:publish dinesh/bugonemail
 
 Now change Config file.
 ```php
